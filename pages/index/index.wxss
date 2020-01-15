@@ -1,0 +1,27 @@
+.nav{
+  display: flex;
+  background-color: #f0f0f0;
+  padding:5px;
+}
+.item{
+  flex: 1;
+  text-align: center;
+}
+
+.seachInput{
+  width: 750rpx;
+  background-color: #EA4350;
+  height: 100rpx;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seachContent{
+  width: 700rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

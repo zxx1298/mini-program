@@ -1,0 +1,11 @@
+
+<!-- 搜索框 -->
+<view class="seachInput">
+   <view class="seachContent">
+     {{seachItem}}
+   </view>
+</view>
+<view class="nav">
+   <view class="item"  >项目</view>
+
+</view>
