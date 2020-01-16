@@ -1,11 +1,62 @@
 
 <!-- 搜索框 -->
 <view class="seachInput">
-   <view class="seachContent">
-     {{seachItem}}
+   <view class="seachInput1">
+   <seach-input/>
    </view>
-</view>
-<view class="nav">
-   <view class="item"  >项目</view>
-
+   <view class="index_swiper">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item wx:for="{{swiper_list}}" wx:key="goods_id">
+        <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  
+  <view class="seach_classify">
+      <view class="seach_classify1" wx:for='{{classify}}' wx:key='index'>
+      <navigator>
+        <image src="{{item.image_src}}"></image>
+      </navigator>
+      </view>
+  </view>
+  <view class="seach_shi" wx:for='{{recommend}}' wx:key='index'>
+      <view class="seach_nv">
+      <navigator>
+        <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </navigator>
+      </view>
+      <view class="seach_tupian">
+          <view class="seach_img_1">
+          <navigator>
+           <image src="{{item.product_list[0].image_src}}" mode="widthFix"></image>
+          </navigator>
+          </view>
+          <view class="seach_img_2">
+              <view>
+               <navigator>
+                <image src="{{item.product_list[1].image_src}}" ></image>
+               </navigator>
+              </view>
+              <view>
+             <navigator>
+               <image src="{{item.product_list[2].image_src}}" ></image>
+             </navigator>
+              </view>
+          </view>
+          <view class="seach_img_3">
+            <view>
+            <navigator>
+                 <image src="{{item.product_list[3].image_src}}" ></image>
+            </navigator>
+            </view>
+            <view>
+            <navigator>
+                 <image src="{{item.product_list[4].image_src}}" ></image>
+            </navigator>
+            </view>
+          </view>
+      </view>
+  </view>
 </view>

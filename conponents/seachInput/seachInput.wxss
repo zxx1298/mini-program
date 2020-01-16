@@ -1,0 +1,17 @@
+.seachInput1{
+  width: 750rpx;
+  background-color: var(--themColor);
+  height: 100rpx;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seachContent{
+  width: 700rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
